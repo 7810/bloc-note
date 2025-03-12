@@ -160,13 +160,13 @@ def copier_texte():
 def coller_texte():
     onglet_actif = notebook.nametowidget(notebook.select())
     text_area = onglet_actif.winfo_children()[0]
-    # Copier le texte sélectionné
+    # Coller le texte sélectionné
     text_area.event_generate("<<Paste>>")
 
 def couper_texte():
     onglet_actif = notebook.nametowidget(notebook.select())
     text_area = onglet_actif.winfo_children()[0]
-    # Copier le texte sélectionné
+    # Couper le texte sélectionné
     text_area.event_generate("<<Cut>>")
 
 """================================================================================================
